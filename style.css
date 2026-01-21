@@ -2273,4 +2273,36 @@ body {
     .pricing-cards {
         grid-template-columns: 1fr;
     }
+
+    .logo-image {
+        height: 60px;
+        /* Even smaller for mobile */
+    }
+
+    .logo-text-branded {
+        font-size: 1.4rem;
+    }
+
+    .header-flex {
+        padding: 0 1rem;
+    }
+
+    .img-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .img-main {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .img-side {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
 }
