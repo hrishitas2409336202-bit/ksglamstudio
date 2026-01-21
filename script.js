@@ -1,23 +1,24 @@
 // ===== GALLERY IMAGES AND VIDEOS =====
 const galleryItems = {
-    nailart: [
-        { src: 'photo and video/nailart1.jpeg', type: 'image' },
-        { src: 'photo and video/nailart2.jpeg', type: 'image' },
-        { src: 'photo and video/nailart3.jpeg', type: 'image' },
-        { src: 'photo and video/nailart4.jpeg', type: 'image' },
-        { src: 'photo and video/nailart7.jpg', type: 'image' },
-        { src: 'photo and video/nailart6.jpeg', type: 'image' }
+  nailart: [
+        { src: './photo-and-video/nailart1.jpeg', type: 'image' },
+        { src: './photo-and-video/nailart2.jpeg', type: 'image' },
+        { src: './photo-and-video/nailart3.jpeg', type: 'image' },
+        { src: './photo-and-video/nailart4.jpeg', type: 'image' },
+        { src: './photo-and-video/nailart5.jpeg', type: 'image' },
+        { src: './photo-and-video/nailart6.jpeg', type: 'image' },
+        { src: './photo-and-video/nailart7.JPG', type: 'image' }
     ],
     mehendi: [
-        { src: 'photo and video/mehendi.jpeg', type: 'image' },
-        { src: 'photo and video/mehendi photo1.jpeg', type: 'image' },
-        { src: 'photo and video/mehendi photo2.jpeg', type: 'image' },
-        { src: 'photo and video/mehendi photo3.jpeg', type: 'image' },
-        { src: 'photo and video/mehendi photo4.jpeg', type: 'image' },
-        { src: 'photo and video/mehendi video1.mp4', type: 'video' },
-        { src: 'photo and video/mehendi video2.mp4', type: 'video' },
-        { src: 'photo and video/mehendi video3.mp4', type: 'video' },
-        { src: 'photo and video/mehendi video4.mp4', type: 'video' }
+        { src: './photo-and-video/mehendi.jpeg', type: 'image' },
+        { src: './photo-and-video/mehendi-photo1.jpeg', type: 'image' },
+        { src: './photo-and-video/mehendi-photo2.jpeg', type: 'image' },
+        { src: './photo-and-video/mehendi-photo3.jpeg', type: 'image' },
+        { src: './photo-and-video/mehendi-photo4.jpeg', type: 'image' },
+        { src: './photo-and-video/mehendi-video1.mp4', type: 'video' },
+        { src: './photo-and-video/mehendi-video2.mp4', type: 'video' },
+        { src: './photo-and-video/mehendi-video3.mp4', type: 'video' },
+        { src: './photo-and-video/mehendi-video4.mp4', type: 'video' }
     ]
 };
 
@@ -505,3 +506,4 @@ rippleStyles.textContent = `
 document.head.appendChild(rippleStyles);
 
 console.log('🇮🇳 KS Glam Studio - Republic Day Special Edition! Jai Hind! 🇮🇳');
+
