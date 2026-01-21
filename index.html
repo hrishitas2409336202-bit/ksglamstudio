@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KS Glam Studio | Professional Nail Art & Mehendi Services in Virar</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="KS Glam Studio offers professional nail art and traditional mehendi services in Virar. Perfect for weddings, parties, festivals, and special occasions. Book your appointment today!">
+    <meta name="keywords"
+        content="nail art, mehendi, henna, bridal mehendi, nail design, Virar, Mumbai, wedding, party, festival">
+    <meta name="author" content="KS Glam Studio">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:title" content="KS Glam Studio | Professional Nail Art & Mehendi Services">
+    <meta property="og:description"
+        content="Exquisite nail art designs and traditional mehendi services that celebrate your unique style.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💅</text></svg>">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo-container">
+                <img src="logo.jpg" alt="KS Glam Studio" class="loader-logo">
+            </div>
+            <div class="loader-branding">KS Glam Studio</div>
+        </div>
+    </div>
+
+    <!-- Republic Day Banner -->
+    <div class="republic-banner" id="republic-banner">
+        <div class="banner-flags" id="banner-flags"></div>
+        <button class="banner-close" aria-label="Close banner" onclick="closeBanner()">&times;</button>
+        <div class="banner-content">
+            <span class="banner-icon flag-wave"><i class="fa-solid fa-flag" style="color: #FF9933;"></i></span>
+            <span class="banner-text">
+                <span class="banner-festival">🎖️ Happy Republic Day! 🎖️</span>
+                Celebrate with <span class="banner-highlight">10% OFF</span> on all services!
+            </span>
+            <span class="banner-icon flag-wave delay"><i class="fa-solid fa-flag" style="color: #138808;"></i></span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header" id="header">
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="logo.jpg" alt="KS Glam Studio" class="logo-image">
+                <span class="logo-text-branded">KS Glam Studio</span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu"
+                aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav id="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles" aria-hidden="true"></div>
+        <div class="container hero-flex">
+            <div class="hero-content reveal-left">
+                <span class="badge">
+                    <i class="fa-solid fa-sparkles"></i> Professional Nail Art & Mehendi Services
+                </span>
+                <h1>
+                    <span class="typewriter-text">Express Yourself</span><br>
+                    <span class="gradient-text">Through Art</span>
+                </h1>
+                <p class="tagline"><em>"Where beauty becomes art, and dreams become reality"</em></p>
+                <p class="desc">Exquisite nail art designs and traditional mehendi services that celebrate your unique
+                    style. Perfect for weddings, parties, festivals, and special occasions.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary btn-ripple">
+                        <span>Book Now</span>
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="#gallery" class="btn btn-outline btn-ripple">
+                        <i class="fa fa-images" aria-hidden="true"></i>
+                        <span>View Gallery</span>
+                    </a>
+                </div>
+                <!-- Trust Indicators -->
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <i class="fa-solid fa-shield-check"></i>
+                        <span>100% Safe Products</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-star"></i>
+                        <span>4.7 Star Rated</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>On-Time Service</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-images reveal-right">
+                <div class="img-grid">
+                    <video src="./photo-and-video/mehendi-video.mp4" class="img-main" autoplay loop muted playsinline
+                        aria-label="Beautiful mehendi design video showcasing intricate patterns"></video>
+                    <img src="./photo-and-video/nailart7.JPG" alt="Traditional mehendi design on hands" class="img-side"
+                        loading="lazy">
+                    <img src="./photo-and-video/nailart2.jpeg" alt="Elegant bridal mehendi pattern" class="img-side"
+                        loading="lazy">
+                </div>
+                <!-- Floating elements -->
+                <div class="floating-badge badge-1">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>100+ Happy Clients</span>
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fa-solid fa-palette"></i>
+                    <span>Custom Designs</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator" aria-hidden="true">
+            <span>Scroll Down</span>
+            <i class="fa fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Republic Day Offer Section -->
+    <section class="republic-offer reveal-up">
+        <div class="offer-bg-pattern"></div>
+        <div class="ashoka-chakra-glow"></div>
+        <div class="offer-flags" id="offer-flags"></div>
+
+        <!-- Animated Festival Display -->
+        <div class="festival-display">
+            <div class="ashoka-chakra">☸️</div>
+            <span class="festival-name">गणतंत्र दिवस</span>
+        </div>
+
+        <h2>
+            <span class="offer-icon flag-dance"><i class="fa-solid fa-flag" style="color: #FF9933;"></i></span>
+            <span class="offer-title-text">Republic Day Special!</span>
+            <span class="offer-icon flag-dance delay"><i class="fa-solid fa-flag" style="color: #138808;"></i></span>
+        </h2>
+
+        <p class="offer-text">
+            Celebrate our 77th Republic Day with stunning patriotic looks!<br>
+            Get <strong class="discount-highlight">10% OFF</strong> on all Nail Art & Mehendi services!
+        </p>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-container" id="countdown-container">
+            <p class="countdown-label">🎖️ Republic Day celebration in:</p>
+            <div class="countdown-timer" id="countdown-timer">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label-small">Days</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label-small">Hours</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label-small">Mins</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label-small">Secs</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="#contact" class="btn btn-republic btn-ripple">
+            <i class="fa-solid fa-flag"></i>
+            <span>Book Your Patriotic Makeover</span>
+            <i class="fa-solid fa-arrow-right arrow-animate"></i>
+        </a>
+
+        <p class="offer-note">
+            <i class="fa-solid fa-gift"></i> Valid till January 28th, 2026 • Special Tricolor Nail Art Available!
+        </p>
+
+        <div class="traditional-greeting">
+            <span>जय हिंद! <i class="fa-solid fa-flag" style="color: #FF9933;"></i> वंदे मातरम्! 🙏</span>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal-up">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-number" data-target="200">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item reveal-up" style="animation-delay: 0.1s">
+                    <div class="stat-icon"><i class="fa-solid fa-palette"></i></div>
+                    <div class="stat-number" data-target="200">0</div>
+                    <div class="stat-label">Designs Created</div>
+                </div>
+                <div class="stat-item reveal-up" style="animation-delay: 0.2s">
+                    <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item reveal-up" style="animation-delay: 0.3s">
+                    <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Bridal Packages</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">Our Portfolio</span>
+                <h2 class="section-title">Our Work</h2>
+                <p class="section-subtitle">
+                    Browse through our portfolio of stunning designs<br>
+                    <span class="section-quote">"Each design is a masterpiece crafted with passion and precision"</span>
+                </p>
+            </div>
+            <div class="gallery-filters reveal-up">
+                <button class="filter-btn active" data-filter="nailart" aria-pressed="true">
+                    <i class="fa-solid fa-paintbrush"></i> Nail Art
+                </button>
+                <button class="filter-btn" data-filter="mehendi" aria-pressed="false">
+                    <i class="fa-solid fa-hand"></i> Mehendi
+                </button>
+            </div>
+            <div class="gallery-grid" id="gallery-grid" role="grid">
+                <!-- Images loaded by JS with skeleton loading -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">Why Choose Us</span>
+                <h2 class="section-title">What Makes Us Special</h2>
+                <p class="section-subtitle">Why clients trust us for their special moments</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal-up">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3>Natural Products</h3>
+                    <p>We use 100% natural and organic henna paste, free from harmful chemicals.</p>
+                </div>
+                <div class="feature-card reveal-up" style="animation-delay: 0.1s">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>High-quality nail polishes and accessories for long-lasting beautiful results.</p>
+                </div>
+                <div class="feature-card reveal-up" style="animation-delay: 0.2s">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Personalized Designs</h3>
+                    <p>Every design is customized to match your personality and preferences.</p>
+                </div>
+                <div class="feature-card reveal-up" style="animation-delay: 0.3s">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <h3>Home Service</h3>
+                    <p>We bring our premium services right to your doorstep for weddings, parties, and special
+                        occasions.</p>
+                </div>
+                <div class="feature-card reveal-up" style="animation-delay: 0.4s">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3>Timely Service</h3>
+                    <p>Always punctual and professional, respecting your valuable time.</p>
+                </div>
+                <div class="feature-card reveal-up" style="animation-delay: 0.5s">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-tag"></i>
+                    </div>
+                    <h3>Affordable Prices</h3>
+                    <p>Competitive pricing without compromising on quality and service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiration Section -->
+    <section class="inspiration-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">Our Philosophy</span>
+                <h2 class="section-title">Our Inspiration</h2>
+                <p class="section-subtitle">Words that guide our artistry and passion</p>
+            </div>
+            <div class="inspiration-cards">
+                <div class="inspiration-card reveal-up">
+                    <div class="card-glow"></div>
+                    <i class="fa-solid fa-sparkles" aria-hidden="true"></i>
+                    <blockquote>"Beauty is art, and art is the signature of life."</blockquote>
+                    <span>Our Philosophy</span>
+                </div>
+                <div class="inspiration-card reveal-up" style="animation-delay: 0.1s">
+                    <div class="card-glow"></div>
+                    <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    <blockquote>"Every design tells a story, every detail matters."</blockquote>
+                    <span>Our Promise</span>
+                </div>
+                <div class="inspiration-card reveal-up" style="animation-delay: 0.2s">
+                    <div class="card-glow"></div>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <blockquote>"Your beauty deserves to be celebrated in color and grace."</blockquote>
+                    <span>Our Mission</span>
+                </div>
+            </div>
+            <div class="inspiration-banner reveal-up">
+                <i class="fa-solid fa-sparkles" aria-hidden="true"></i>
+                <span>"Confidence blooms when beauty meets artistry"</span>
+                <p>Let us transform your vision into stunning reality</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">Our Packages</span>
+                <h2 class="section-title">Pricing Packages</h2>
+                <p class="section-subtitle">
+                    Choose the perfect package for your needs. Custom packages available on request.<br>
+                    <span class="section-quote">"Luxury and quality at prices that celebrate you"</span>
+                </p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card popular reveal-up">
+                    <span class="popular-badge"><i class="fa-solid fa-fire"></i> Popular</span>
+                    <h3>Basic Nail Art</h3>
+                    <p class="pricing-desc">Perfect for everyday style</p>
+                    <div class="price">
+                        <span class="currency">₹</span>700<span class="period">/session</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Nail shaping & filing</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Basic polish application</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Simple nail art design</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-ripple">Book Now</a>
+                </div>
+                <div class="pricing-card popular reveal-up" style="animation-delay: 0.1s">
+                    <span class="popular-badge"><i class="fa-solid fa-fire"></i> Popular</span>
+                    <h3>Premium Nail Art</h3>
+                    <p class="pricing-desc">For special occasions</p>
+                    <div class="price">
+                        <span class="currency">₹</span>850<span class="period">/session</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Everything in Basic</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> 3D nail art designs</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Rhinestone embellishments</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Long-lasting finish</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-ripple">Book Now</a>
+                </div>
+                <div class="pricing-card popular reveal-up" style="animation-delay: 0.2s">
+                    <span class="popular-badge"><i class="fa-solid fa-fire"></i> Popular</span>
+                    <h3>Simple Mehendi</h3>
+                    <p class="pricing-desc">Quick and elegant designs</p>
+                    <div class="price">
+                        <span class="currency">₹</span>650<span class="period">/session</span>
+                    </div>
+                    <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Hand design</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Arabic or minimalist style</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Natural henna paste</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Design consultation</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-ripple">Book Now</a>
+                </div>
+                <div class="pricing-card popular featured reveal-up" style="animation-delay: 0.3s">
+                    <span class="popular-badge"><i class="fa-solid fa-crown"></i> Best Value</span>
+                    <h3>Bridal Package</h3>
+                    <p class="pricing-desc">Complete bridal experience</p>
+                    <div class="price">
+                        <span class="currency">₹</span>5000<span class="period"></span>
+                    </div>
+                    <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Full hands & feet mehendi</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Intricate bridal designs</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Premium nail art</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> On-location service</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-ripple">Book Now</a>
+                </div>
+            </div>
+            <p class="pricing-note reveal-up">
+                <i class="fa-solid fa-info-circle"></i>
+                All prices are starting rates. Final pricing may vary based on design complexity and time required.
+            </p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">Client Love</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">
+                    Real experiences from our valued customers<br>
+                    <span class="section-quote">"Your happiness is our greatest achievement"</span>
+                </p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonials-cards">
+                    <div class="testimonial-card reveal-up">
+                        <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar-placeholder">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <span class="testimonial-name">Supriya</span>
+                                <span class="testimonial-service">Bridal Package</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote class="testimonial-text">"The bridal mehendi and nail art were absolutely stunning!
+                            The team was professional and made my special day even more beautiful. Highly recommended!"
+                        </blockquote>
+                        <div class="testimonial-verified">
+                            <i class="fa-solid fa-circle-check"></i> Verified Client
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal-up" style="animation-delay: 0.1s">
+                        <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar-placeholder">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <span class="testimonial-name">Megha Mane</span>
+                                <span class="testimonial-service">Premium Nail Art</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote class="testimonial-text">"I get my nails done here every month. The designs are
+                            always creative and last for weeks. The attention to detail is impressive!"</blockquote>
+                        <div class="testimonial-verified">
+                            <i class="fa-solid fa-circle-check"></i> Verified Client
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal-up" style="animation-delay: 0.2s">
+                        <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar-placeholder">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div>
+                                <span class="testimonial-name">Hrishita</span>
+                                <span class="testimonial-service">Mehendi Design</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote class="testimonial-text">"Beautiful intricate mehendi work! The color was rich and
+                            lasted perfectly. They made my festival celebration extra special. Will definitely return!"
+                        </blockquote>
+                        <div class="testimonial-verified">
+                            <i class="fa-solid fa-circle-check"></i> Verified Client
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Book your appointment or reach out with any questions</p>
+            </div>
+            <div class="contact-flex">
+                <div class="contact-info reveal-left">
+                    <h3><i class="fa-solid fa-address-card"></i> Contact Information</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <div class="contact-icon-wrap"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+919326303630">+91 9326303630</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon-wrap"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:skomalvinherkar@gmail.com">skomalvinherkar@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon-wrap"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span>Mumbai, Maharashtra</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="contact-hours">
+                        <h4><i class="fa fa-calendar" aria-hidden="true"></i> Appointment Hours</h4>
+                        <p>Monday - Sunday: Available on request</p>
+                        <p class="quick-response"><i class="fa-solid fa-bolt"></i> Quick Response within 2 hours</p>
+                    </div>
+                    <div class="contact-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <div class="insta-link-wrap">
+                                <a href="https://www.instagram.com/komalmehandiartist2022?igsh=MXBzYm0xZHd5aXM5aw=="
+                                    target="_blank" rel="noopener"
+                                    aria-label="Follow us on Instagram for Mehendi designs">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <div class="insta-label">Mehendi</div>
+                            </div>
+                            <div class="insta-link-wrap">
+                                <a href="https://www.instagram.com/dramaqueens_with_nails?igsh=MW9hdDhtY3JtMWZ2dg=="
+                                    target="_blank" rel="noopener"
+                                    aria-label="Follow us on Instagram for Nail Art designs">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <div class="insta-label">Nail Art</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap reveal-right">
+                    <h3><i class="fa-solid fa-calendar-plus"></i> Book Your Appointment</h3>
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            <div class="input-icon"><i class="fa fa-user"></i></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit phone number"
+                                pattern="[0-9]{10}" maxlength="10" required>
+                            <div class="input-icon"><i class="fa fa-phone"></i></div>
+                            <div id="phone-error" class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Type *</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="Nail Art">Nail Art</option>
+                                <option value="Mehendi">Mehendi</option>
+                                <option value="Bridal">Bridal Package</option>
+                            </select>
+                            <div class="input-icon"><i class="fa fa-spa"></i></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Requirements</label>
+                            <textarea id="message" name="message"
+                                placeholder="Tell us about your requirements, preferred date/time, any specific design ideas..."
+                                rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-ripple btn-full">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <span>Send Booking Request</span>
+                            <span class="btn-loader"></span>
+                        </button>
+                    </form>
+                    <div id="form-message" class="form-success-message" role="alert"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-flex">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="logo.jpg" alt="KS Glam Studio" class="logo-image footer-logo-image">
+                </div>
+                <p>Transforming beauty into art with professional nail art and mehendi services. Your satisfaction is
+                    our masterpiece.</p>
+                <div class="footer-certifications">
+                    <span><i class="fa-solid fa-shield-check"></i> Safe Products</span>
+                    <span><i class="fa-solid fa-star"></i> 5 Star Service</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home"><i class="fa fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#gallery"><i class="fa fa-chevron-right"></i> Gallery</a></li>
+                    <li><a href="#pricing"><i class="fa fa-chevron-right"></i> Pricing</a></li>
+                    <li><a href="#contact"><i class="fa fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><i class="fa fa-paint-brush"></i> Nail Art</li>
+                    <li><i class="fa fa-hand-sparkles"></i> Mehendi</li>
+                    <li><i class="fa fa-ring"></i> Bridal Packages</li>
+                    <li><i class="fa fa-home"></i> Home Service</li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fa fa-map-marker-alt"></i> Mumbai, Maharashtra</li>
+                    <li><i class="fa fa-phone"></i> +91 9326303630</li>
+                    <li><i class="fa fa-envelope"></i> skomalvinherkar@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Made with <i class="fa fa-heart" aria-hidden="true"></i> for beautiful people</span><br>
+            <span>&copy; 2026 KS Glam Studio. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919326303630" target="_blank" rel="noopener" class="whatsapp-float"
+        aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
