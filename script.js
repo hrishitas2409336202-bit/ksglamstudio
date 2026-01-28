@@ -30,99 +30,6 @@ window.addEventListener('load', () => {
     }, 800);
 });
 
-// ===== CLOSE BANNER =====
-function closeBanner() {
-    const banner = document.getElementById('republic-banner');
-    if (banner) {
-        banner.classList.add('hidden');
-    }
-}
-
-// ===== COUNTDOWN TIMER - REPUBLIC DAY =====
-function updateCountdown() {
-    // Republic Day 2026 date
-    const republicDate = new Date('January 26, 2026 06:00:00').getTime();
-    const now = new Date().getTime();
-    const timeLeft = republicDate - now;
-
-    if (timeLeft > 0) {
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-        const daysEl = document.getElementById('days');
-        const hoursEl = document.getElementById('hours');
-        const minutesEl = document.getElementById('minutes');
-        const secondsEl = document.getElementById('seconds');
-
-        if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
-        if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
-        if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
-        if (secondsEl) {
-            secondsEl.textContent = String(seconds).padStart(2, '0');
-            // Add pulse effect on seconds change
-            secondsEl.style.transform = 'scale(1.1)';
-            setTimeout(() => secondsEl.style.transform = 'scale(1)', 100);
-        }
-    } else {
-        // It's Republic Day!
-        const container = document.getElementById('countdown-container');
-        if (container) {
-            container.innerHTML = '<p style="color: #FF9933; font-size: 1.3rem;">🇮🇳 Happy Republic Day! Book your patriotic look today! 🇮🇳</p>';
-        }
-    }
-}
-
-// Update countdown every second
-setInterval(updateCountdown, 1000);
-updateCountdown();
-
-// ===== BANNER FLAGS ANIMATION =====
-function createBannerFlag() {
-    const container = document.getElementById('banner-flags');
-    if (!container) return;
-
-    const flag = document.createElement('div');
-    const flagSymbols = ['★', '✦', '◆', '✧', '●'];
-    const colors = ['#FF9933', '#FFFFFF', '#138808', '#000080', '#FFD700'];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-    if (Math.random() > 0.5) {
-        flag.innerHTML = flagSymbols[Math.floor(Math.random() * flagSymbols.length)];
-        flag.style.color = randomColor;
-    } else {
-        flag.innerHTML = '★';
-        flag.style.color = randomColor;
-    }
-
-    flag.style.cssText = `
-        position: absolute;
-        font-size: ${10 + Math.random() * 14}px;
-        left: ${Math.random() * 100}%;
-        top: ${Math.random() * 100}%;
-        pointer-events: none;
-        animation: flagTwinkle ${1.5 + Math.random() * 2}s ease-in-out infinite;
-        animation-delay: ${Math.random() * 2}s;
-        filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.3));
-    `;
-    container.appendChild(flag);
-}
-
-// Create initial flags for banner
-for (let i = 0; i < 12; i++) {
-    createBannerFlag();
-}
-
-// Add flag twinkle animation
-const flagStyles = document.createElement('style');
-flagStyles.textContent = `
-    @keyframes flagTwinkle {
-        0%, 100% { opacity: 0.4; transform: translateY(0) rotate(-5deg); }
-        50% { opacity: 1; transform: translateY(-3px) rotate(5deg); }
-    }
-`;
-document.head.appendChild(flagStyles);
 
 // ===== MOBILE MENU =====
 const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
@@ -220,7 +127,7 @@ revealElements.forEach(el => revealObserver.observe(el));
 const scrollIndicator = document.querySelector('.hero-scroll-indicator');
 if (scrollIndicator) {
     scrollIndicator.addEventListener('click', () => {
-        const nextSection = document.querySelector('.republic-offer') || document.querySelector('.stats-section');
+        const nextSection = document.querySelector('.stats-section');
         if (nextSection) {
             const headerHeight = document.querySelector('.main-header').offsetHeight;
             const targetPosition = nextSection.offsetTop - headerHeight;
@@ -505,4 +412,4 @@ rippleStyles.textContent = `
 `;
 document.head.appendChild(rippleStyles);
 
-console.log('🇮🇳 KS Glam Studio - Republic Day Special Edition! Jai Hind! 🇮🇳');
+console.log('✨ KS Glam Studio - Professional Nail Art & Mehendi ✨');
